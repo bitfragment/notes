@@ -1,0 +1,44 @@
+# Site settings
+title:            bitfragment-notes
+email:            blennon AT bitfragment DOT net
+description:      >-
+                  Reading, research, and thinking notes by Brian Lennon,
+                  Associate Professor of English and Comparative Literature,
+                  Pennsylvania State University
+baseurl: "/notes/" # the subpath of your site, e.g. /blog/
+url: "http://bitfragment.net" # the base hostname & protocol for your site
+twitter_username: bitfragment
+github_username:  bitfragment
+
+# Build settings
+markdown: kramdown
+
+kramdown:
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..2
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  input: GFM
+
+collections:
+  notes:
+    output: true
+    permalink: /notes/:name/
+  proglang-notes:
+    output: true
+    permalink: /notes/:name/
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "notes"
+    values:
+      layout: "page"
+  -
+    scope:
+      path: ""
+      type: "proglang-notes"
+    values:
+      layout: "page"

@@ -1,0 +1,40 @@
+---
+layout: default
+---
+
+<div class="home">
+
+  <h1 class="page-heading">Notes</h1>
+
+  <h2>General notes</h2>
+
+  <ul class="post-list">
+    {% for note in site.notes %}
+      <li>
+          <a class="post-link" href="{{ note.url | prepend: site.baseurl }}">{{ note.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <h2>Notes on the history and theory of programming languages and related topics</h2>
+
+  <ul class="post-list">
+    {% for note in site.proglang-notes %}{% unless note.title contains "Bibliography" %}
+      <li>
+          <a class="post-link" href="{{ note.url | prepend: site.baseurl }}">{{ note.title }}</a>
+      </li>
+    {% endunless %}{% endfor %}
+  </ul>
+
+  <h3>Bibliographies</h3>
+  <ul class="post-list">
+    {% for note in site.proglang-notes %}{% if note.title contains "Bibliography" %}
+      <li>
+          <a class="post-link" href="{{ note.url | prepend: site.baseurl }}">{{ note.title }}</a>
+      </li>
+    {% endif %}{% endfor %}
+  </ul>
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+</div>
