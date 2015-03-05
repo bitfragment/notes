@@ -7,6 +7,9 @@ description:      >-
                   Pennsylvania State University
 baseurl: "/notes" # the subpath of your site, e.g. /blog/
 url: "http://bitfragment.net" # the base hostname & protocol for your site
+home:
+  name: bitfragment.net
+  url: http://bitfragment.net
 twitter_username: bitfragment
 github_username:  bitfragment
 
