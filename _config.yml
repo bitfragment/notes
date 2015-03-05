@@ -24,10 +24,10 @@ kramdown:
 collections:
   notes:
     output: true
-    permalink: /notes/:name/
+    permalink: /:name/
   proglang-notes:
     output: true
-    permalink: /notes/:name/
+    permalink: /:name/
 
 defaults:
   -
