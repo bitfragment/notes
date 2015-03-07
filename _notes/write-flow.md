@@ -20,3 +20,7 @@ There does need to be a "bin" holding ideas for things. I haven't solved this ye
 Notes that are written as one follows one's non-presentist, non-instrumental reading inclinations. Stored in something that makes them searchable, without any more metadata than the filename itself (`proglang-tpc-multilingual`, `proglang-src-sammet_programming_1969`). (Why hasn't a wiki ever worked for me for this?)
 
 An index to the notes is written along with the notes. When work is solicited, one looks at the index and where it's dense, there's something to write about.
+
+## Related thoughts?
+
+* Ian Bogost, "unit-operational academic practice": "Intellectual projects would structure themselves more like software: units of encapsulated production with structured ties to multiple potential applications" (*Unit Operations: An Approach to Videogame Criticism*, 174)
