@@ -7,8 +7,14 @@
 - title: JavaScript pragmatics
   url:   http://nbviewer.ipython.org/github/bitfragment/notes/blob/gh-pages/_proglang-notes/proglang-lng-javascript-pragmatics.ipynb
 
+- title: JavaScript pragmatics: functional style
+  url:   http://nbviewer.ipython.org/github/bitfragment/notes/blob/gh-pages/_proglang-notes/proglang-lng-javascript-pragmatics-functional.ipynb
+
 - title: Node.js pragmatics
   url:   http://nbviewer.ipython.org/github/bitfragment/notes/blob/gh-pages/_proglang-notes/proglang-lng-javascript-nodejs-pragmatics.ipynb
+
+- title: JavaScript syntax
+  url:   http://nbviewer.ipython.org/github/bitfragment/notes/blob/gh-pages/_proglang-notes/proglang-lng-javascript-syntax.ipynb
 
 - title: JavaScript exercises
   url:   http://nbviewer.ipython.org/github/bitfragment/notes/blob/gh-pages/_proglang-notes/proglang-lng-javascript-exercises.ipynb
