@@ -1,3 +1,6 @@
+- title: Rosetta notes
+  url:   http://nbviewer.ipython.org/github/bitfragment/notes/blob/gh-pages/_proglang-notes/proglang-lng-rosetta.ipynb
+
 - title: JavaScript semantics
   url:   http://nbviewer.ipython.org/github/bitfragment/notes/blob/gh-pages/_proglang-notes/proglang-lng-javascript-semantics.ipynb
 
@@ -12,3 +15,12 @@
 
 - title: JavaScript syntax
   url:   http://nbviewer.ipython.org/github/bitfragment/notes/blob/gh-pages/_proglang-notes/proglang-lng-javascript-syntax.ipynb
+
+- title: Haskell scratch notes
+  url:   http://nbviewer.ipython.org/github/bitfragment/notes/blob/gh-pages/_proglang-notes/proglang-lng-haskell-scratch.ipynb
+
+- title: Python 2 scratch notes
+  url:   http://nbviewer.ipython.org/github/bitfragment/notes/blob/gh-pages/_proglang-notes/proglang-lng-python2-scratch.ipynb
+
+- title: Ruby scratch notes
+  url:   http://nbviewer.ipython.org/github/bitfragment/notes/blob/gh-pages/_proglang-notes/proglang-lng-ruby-scratch.ipynb
