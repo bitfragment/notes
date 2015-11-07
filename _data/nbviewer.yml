@@ -16,6 +16,9 @@
 - title: JavaScript syntax
   url:   http://nbviewer.ipython.org/github/bitfragment/notes/blob/gh-pages/_proglang-notes/proglang-lng-javascript-syntax.ipynb
 
+- title: Rosetta scratch notes
+  url:   http://nbviewer.ipython.org/github/bitfragment/notes/blob/gh-pages/_proglang-notes/proglang-lng-rosetta-scratch.ipynb
+
 - title: Haskell scratch notes
   url:   http://nbviewer.ipython.org/github/bitfragment/notes/blob/gh-pages/_proglang-notes/proglang-lng-haskell-scratch.ipynb
 
