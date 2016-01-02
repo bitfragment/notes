@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>The Life of a Program</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+  <link rel="stylesheet" media="all" href="docco.css" />
+</head>
+<body>
+  <div id="container">
+    <div id="background"></div>
+    
+    <ul class="sections">
+        
+        
+        
+        <li id="section-1">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-1">&#182;</a>
+              </div>
+              <h1 id="the-life-of-a-program">The Life of a Program</h1>
+<p>Notes following Bryant and O’Hallaron,
+<em>Computer Systems: A Programmer’s Perspective</em> (2003),
+Chapter 1: A Tour of Computer Systems</p>
+
+            </div>
+            
+        </li>
+        
+        
+        <li id="section-2">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-2">&#182;</a>
+              </div>
+              <h2 id="1-1-information-is-bits-context">1.1 Information is Bits + Context</h2>
+
+            </div>
+            
+        </li>
+        
+        
+        <li id="section-3">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-3">&#182;</a>
+              </div>
+              <p>Here’s the <code>hello</code> program used by Kernighan and Ritchie in <em>The C
+Programming Language</em>. This program begins its life as a <em>source
+program</em> or <em>source file</em> stored as a text file, <code>hello.c</code>.</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre><span class="hljs-preprocessor">#<span class="hljs-keyword">include</span>&lt;stdio.h&gt;</span>
+
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>
+</span>{
+    <span class="hljs-built_in">printf</span>(<span class="hljs-string">"hello, world\n"</span>);
+}</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-4">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-4">&#182;</a>
+              </div>
+              <p>This source program comprises a sequence of bits, each valued
+either <code>0</code> or <code>1</code>, arranged into 8-bit chunks, or bytes, with each
+byte representing a text character in the program.</p>
+
+            </div>
+            
+        </li>
+        
+        
+        <li id="section-5">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-5">&#182;</a>
+              </div>
+              <p>Hexdump of <code>hello.c</code> using <code>xxd</code> with <code>-b</code> flag to display binary.
+The first byte, <code>00100011</code>, has an integer value of 35,
+corresponding to the ASCII character <code>#</code> (see
+<a href="http://www.asciitable.com/">http://www.asciitable.com/</a>). The second byte, <code>01101001</code>, has an
+integer value of 105, corresponding to the ASCII character <code>i</code>, and
+so on. Newline characters (represented by <code>.</code> in the output of
+<code>xxd</code>) are represented by the byte <code>00001010</code> with an integer value
+of 10, assigned by ASCII to <code>LF</code>.</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre><span class="hljs-comment">/*
+
+$ xxd -b hello.c
+0000000: 00100011 01101001 01101110 01100011 01101100 01110101  #inclu
+0000006: 01100100 01100101 00111100 01110011 01110100 01100100  de&lt;std
+000000c: 01101001 01101111 00101110 01101000 00111110 00001010  io.h&gt;.
+0000012: 00001010 01101001 01101110 01110100 00100000 01101101  .int m
+0000018: 01100001 01101001 01101110 00101000 00101001 00001010  ain().
+000001e: 01111011 00001010 00100000 00100000 00100000 00100000  {.
+0000024: 01110000 01110010 01101001 01101110 01110100 01100110  printf
+000002a: 00101000 00100010 01101000 01100101 01101100 01101100  ("hell
+0000030: 01101111 00101100 00100000 01110111 01101111 01110010  o, wor
+0000036: 01101100 01100100 01011100 01101110 00100010 00101001  ld\n")
+000003c: 00111011 00001010 01111101 00001010                    ;.}.
+
+*/</span></pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-6">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-6">&#182;</a>
+              </div>
+              <h2 id="1-2-programs-are-translated-by-other-programs-into-different-forms">1.2 Programs Are Translated by Other Programs into Different Forms</h2>
+
+            </div>
+            
+        </li>
+        
+        
+        <li id="section-7">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-7">&#182;</a>
+              </div>
+              <p>The <em>compiler driver</em> <code>gcc</code> (or <code>clang</code>) translates the source file
+<code>hello.c</code> into the executable object code file <code>hello</code> in four
+phases: <em>preprocessing</em> (<code>cpp</code>), <em>compiling</em> (<code>cc1</code>), <em>assembling</em>
+(<code>as</code>), and <em>linking</em> (<code>ld</code>).</p>
+
+            </div>
+            
+        </li>
+        
+        
+        <li id="section-8">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-8">&#182;</a>
+              </div>
+              <h4 id="preprocessing">Preprocessing</h4>
+
+            </div>
+            
+        </li>
+        
+        
+        <li id="section-9">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-9">&#182;</a>
+              </div>
+              <p>Output of <code>cpp hello.c | head -20</code>. Modifies the program following
+directives beginning with the <code>#</code> character (for example,
+<code>#include&lt;stdio.h&gt;</code>).</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre><span class="hljs-comment">/*
+
+# 1 "hello.c"
+# 1 "&lt;command-line&gt;"
+# 1 "hello.c"
+# 1 "/usr/include/stdio.h" 1 3 4
+# 64 "/usr/include/stdio.h" 3 4
+# 1 "/usr/include/sys/cdefs.h" 1 3 4
+# 506 "/usr/include/sys/cdefs.h" 3 4
+# 1 "/usr/include/sys/_symbol_aliasing.h" 1 3 4
+# 507 "/usr/include/sys/cdefs.h" 2 3 4
+# 572 "/usr/include/sys/cdefs.h" 3 4
+# 1 "/usr/include/sys/_posix_availability.h" 1 3 4
+# 573 "/usr/include/sys/cdefs.h" 2 3 4
+# 65 "/usr/include/stdio.h" 2 3 4
+# 1 "/usr/include/Availability.h" 1 3 4
+# 153 "/usr/include/Availability.h" 3 4
+# 1 "/usr/include/AvailabilityInternal.h" 1 3 4
+# 154 "/usr/include/Availability.h" 2 3 4
+# 66 "/usr/include/stdio.h" 2 3 4
+
+# 1 "/usr/include/_types.h" 1 3 4
+
+*/</span></pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-10">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-10">&#182;</a>
+              </div>
+              <h3 id="compilation">Compilation</h3>
+
+            </div>
+            
+        </li>
+        
+        
+        <li id="section-11">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-11">&#182;</a>
+              </div>
+              <p>Output of <code>clang -S -o /dev/stdout hello.c</code>, which performs
+preprocessing and then translates the preprocessed program into an
+assembly language program (but given the <code>-S</code> flag, stops short of
+compiling and linking it).</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>
+<span class="hljs-comment">/*
+    .section    __TEXT,__text,regular,pure_instructions
+    .macosx_version_min 10, 10
+    .globl  _main
+    .align  4, 0x90
+_main:                                  ## @main
+    .cfi_startproc
+## BB#0:
+    pushq   %rbp
+Ltmp0:
+    .cfi_def_cfa_offset 16
+Ltmp1:
+    .cfi_offset %rbp, -16
+    movq    %rsp, %rbp
+Ltmp2:
+    .cfi_def_cfa_register %rbp
+    subq    $16, %rsp
+    leaq    L_.str(%rip), %rdi
+    movb    $0, %al
+    callq   _printf
+    xorl    %ecx, %ecx
+    movl    %eax, -4(%rbp)          ## 4-byte Spill
+    movl    %ecx, %eax
+    addq    $16, %rsp
+    popq    %rbp
+    retq
+    .cfi_endproc
+
+    .section    __TEXT,__cstring,cstring_literals
+L_.str:                                 ## @.str
+    .asciz  "hello, world\n"
+
+
+.subsections_via_symbols
+
+*/</span></pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-12">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-12">&#182;</a>
+              </div>
+              <h3 id="assembly">Assembly</h3>
+
+            </div>
+            
+        </li>
+        
+        
+        <li id="section-13">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-13">&#182;</a>
+              </div>
+              <p>The output of <code>clang -c hello.c</code>, which performs preprocessing,
+translates the preprocessed program into an assembly language
+program, and then translates the assembly language program into
+machine code, is the object file <code>hello.o</code> (given the <code>-c</code> flag,
+<code>clang</code> stops short of linking the object file). Here’s the output
+of <code>xxd -b hello.o</code>:</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre><span class="hljs-comment">/*
+
+0000000: 11001111 11111010 11101101 11111110 00000111 00000000  ......
+0000006: 00000000 00000001 00000011 00000000 00000000 00000000  ......
+000000c: 00000001 00000000 00000000 00000000 00000100 00000000  ......
+0000012: 00000000 00000000 00000000 00000010 00000000 00000000  ......
+0000018: 00000000 00100000 00000000 00000000 00000000 00000000  . ....
+000001e: 00000000 00000000 00011001 00000000 00000000 00000000  ......
+0000024: 10001000 00000001 00000000 00000000 00000000 00000000  ......
+000002a: 00000000 00000000 00000000 00000000 00000000 00000000  ......
+0000030: 00000000 00000000 00000000 00000000 00000000 00000000  ......
+0000036: 00000000 00000000 00000000 00000000 00000000 00000000  ......
+000003c: 00000000 00000000 00000000 00000000 10011000 00000000  ......
+0000042: 00000000 00000000 00000000 00000000 00000000 00000000  ......
+0000048: 00100000 00000010 00000000 00000000 00000000 00000000   .....
+000004e: 00000000 00000000 10011000 00000000 00000000 00000000  ......
+0000054: 00000000 00000000 00000000 00000000 00000111 00000000  ......
+000005a: 00000000 00000000 00000111 00000000 00000000 00000000  ......
+0000060: 00000100 00000000 00000000 00000000 00000000 00000000  ......
+0000066: 00000000 00000000 01011111 01011111 01110100 01100101  ..__te
+000006c: 01111000 01110100 00000000 00000000 00000000 00000000  xt....
+0000072: 00000000 00000000 00000000 00000000 00000000 00000000  ......
+0000078: 01011111 01011111 01010100 01000101 01011000 01010100  __TEXT
+000007e: 00000000 00000000 00000000 00000000 00000000 00000000  ......
+0000084: 00000000 00000000 00000000 00000000 00000000 00000000  ......
+000008a: 00000000 00000000 00000000 00000000 00000000 00000000  ......
+0000090: 00100011 00000000 00000000 00000000 00000000 00000000  #.....
+0000096: 00000000 00000000 00100000 00000010 00000000 00000000  .. ...
+000009c: 00000100 00000000 00000000 00000000 10111000 00000010  ......
+00000a2: 00000000 00000000 00000010 00000000 00000000 00000000  ......
+00000a8: 00000000 00000100 00000000 10000000 00000000 00000000  ......
+00000ae: 00000000 00000000 00000000 00000000 00000000 00000000  ......
+00000b4: 00000000 00000000 00000000 00000000 01011111 01011111  ....__
+00000ba: 01100011 01110011 01110100 01110010 01101001 01101110  cstrin
+00000c0: 01100111 00000000 00000000 00000000 00000000 00000000  g.....
+00000c6: 00000000 00000000 01011111 01011111 01010100 01000101  ..__TE
+00000cc: 01011000 01010100 00000000 00000000 00000000 00000000  XT....
+00000d2: 00000000 00000000 00000000 00000000 00000000 00000000  ......
+00000d8: 00100011 00000000 00000000 00000000 00000000 00000000  #.....
+00000de: 00000000 00000000 00001110 00000000 00000000 00000000  ......
+00000e4: 00000000 00000000 00000000 00000000 01000011 00000010  ....C.
+00000ea: 00000000 00000000 00000000 00000000 00000000 00000000  ......
+00000f0: 00000000 00000000 00000000 00000000 00000000 00000000  ......
+00000f6: 00000000 00000000 00000010 00000000 00000000 00000000  ......
+00000fc: 00000000 00000000 00000000 00000000 00000000 00000000  ......
+0000102: 00000000 00000000 00000000 00000000 00000000 00000000  ......
+0000108: 01011111 01011111 01100011 01101111 01101101 01110000  __comp
+000010e: 01100001 01100011 01110100 01011111 01110101 01101110  act_un
+0000114: 01110111 01101001 01101110 01100100 01011111 01011111  wind__
+000011a: 01001100 01000100 00000000 00000000 00000000 00000000  LD....
+0000120: 00000000 00000000 00000000 00000000 00000000 00000000  ......
+0000126: 00000000 00000000 00111000 00000000 00000000 00000000  ..8...
+000012c: 00000000 00000000 00000000 00000000 00100000 00000000  .... .
+0000132: 00000000 00000000 00000000 00000000 00000000 00000000  ......
+0000138: 01011000 00000010 00000000 00000000 00000011 00000000  X.....
+000013e: 00000000 00000000 11001000 00000010 00000000 00000000  ......
+0000144: 00000001 00000000 00000000 00000000 00000000 00000000  ......
+000014a: 00000000 00000010 00000000 00000000 00000000 00000000  ......
+0000150: 00000000 00000000 00000000 00000000 00000000 00000000  ......
+0000156: 00000000 00000000 01011111 01011111 01100101 01101000  ..__eh
+000015c: 01011111 01100110 01110010 01100001 01101101 01100101  _frame
+0000162: 00000000 00000000 00000000 00000000 00000000 00000000  ......
+0000168: 01011111 01011111 01010100 01000101 01011000 01010100  __TEXT
+000016e: 00000000 00000000 00000000 00000000 00000000 00000000  ......
+0000174: 00000000 00000000 00000000 00000000 01011000 00000000  ....X.
+000017a: 00000000 00000000 00000000 00000000 00000000 00000000  ......
+0000180: 01000000 00000000 00000000 00000000 00000000 00000000  @.....
+0000186: 00000000 00000000 01111000 00000010 00000000 00000000  ..x...
+000018c: 00000011 00000000 00000000 00000000 00000000 00000000  ......
+0000192: 00000000 00000000 00000000 00000000 00000000 00000000  ......
+0000198: 00001011 00000000 00000000 01101000 00000000 00000000  ...h..
+000019e: 00000000 00000000 00000000 00000000 00000000 00000000  ......
+00001a4: 00000000 00000000 00000000 00000000 00100100 00000000  ....$.
+00001aa: 00000000 00000000 00010000 00000000 00000000 00000000  ......
+00001b0: 00000000 00001010 00001010 00000000 00000000 00000000  ......
+00001b6: 00000000 00000000 00000010 00000000 00000000 00000000  ......
+00001bc: 00011000 00000000 00000000 00000000 11010000 00000010  ......
+00001c2: 00000000 00000000 00000011 00000000 00000000 00000000  ......
+00001c8: 00000000 00000011 00000000 00000000 00011000 00000000  ......
+00001ce: 00000000 00000000 00001011 00000000 00000000 00000000  ......
+00001d4: 01010000 00000000 00000000 00000000 00000000 00000000  P.....
+00001da: 00000000 00000000 00000001 00000000 00000000 00000000  ......
+00001e0: 00000001 00000000 00000000 00000000 00000001 00000000  ......
+00001e6: 00000000 00000000 00000010 00000000 00000000 00000000  ......
+00001ec: 00000001 00000000 00000000 00000000 00000000 00000000  ......
+00001f2: 00000000 00000000 00000000 00000000 00000000 00000000  ......
+00001f8: 00000000 00000000 00000000 00000000 00000000 00000000  ......
+00001fe: 00000000 00000000 00000000 00000000 00000000 00000000  ......
+0000204: 00000000 00000000 00000000 00000000 00000000 00000000  ......
+000020a: 00000000 00000000 00000000 00000000 00000000 00000000  ......
+0000210: 00000000 00000000 00000000 00000000 00000000 00000000  ......
+0000216: 00000000 00000000 00000000 00000000 00000000 00000000  ......
+000021c: 00000000 00000000 00000000 00000000 01010101 01001000  ....UH
+0000222: 10001001 11100101 01001000 10000011 11101100 00010000  ..H...
+0000228: 01001000 10001101 00111101 00000000 00000000 00000000  H.=...
+000022e: 00000000 10110000 00000000 11101000 00000000 00000000  ......
+0000234: 00000000 00000000 00110001 11001001 10001001 01000101  ..1..E
+000023a: 11111100 10001001 11001000 01001000 10000011 11000100  ...H..
+0000240: 00010000 01011101 11000011 01101000 01100101 01101100  .].hel
+0000246: 01101100 01101111 00101100 00100000 01110111 01101111  lo, wo
+000024c: 01110010 01101100 01100100 00001010 00000000 00000000  rld...
+0000252: 00000000 00000000 00000000 00000000 00000000 00000000  ......
+0000258: 00000000 00000000 00000000 00000000 00000000 00000000  ......
+000025e: 00000000 00000000 00100011 00000000 00000000 00000000  ..#...
+0000264: 00000000 00000000 00000000 00000001 00000000 00000000  ......
+000026a: 00000000 00000000 00000000 00000000 00000000 00000000  ......
+0000270: 00000000 00000000 00000000 00000000 00000000 00000000  ......
+0000276: 00000000 00000000 00010100 00000000 00000000 00000000  ......
+000027c: 00000000 00000000 00000000 00000000 00000011 01111010  .....z
+0000282: 01010010 00000000 00000001 01111000 00010000 00000001  R..x..
+0000288: 00010000 00001100 00000111 00001000 10010000 00000001  ......
+000028e: 00000000 00000000 00100100 00000000 00000000 00000000  ..$...
+0000294: 00011100 00000000 00000000 00000000 10001000 11111111  ......
+000029a: 11111111 11111111 11111111 11111111 11111111 11111111  ......
+00002a0: 00100011 00000000 00000000 00000000 00000000 00000000  #.....
+00002a6: 00000000 00000000 00000000 01000001 00001110 00010000  ...A..
+00002ac: 10000110 00000010 01000011 00001101 00000110 00000000  ..C...
+00002b2: 00000000 00000000 00000000 00000000 00000000 00000000  ......
+00002b8: 00010010 00000000 00000000 00000000 00000010 00000000  ......
+00002be: 00000000 00101101 00001011 00000000 00000000 00000000  .-....
+00002c4: 00000000 00000000 00000000 00011101 00000000 00000000  ......
+00002ca: 00000000 00000000 00000001 00000000 00000000 00000110  ......
+00002d0: 00001111 00000000 00000000 00000000 00001110 00000010  ......
+00002d6: 00000000 00000000 00100011 00000000 00000000 00000000  ..#...
+00002dc: 00000000 00000000 00000000 00000000 00000001 00000000  ......
+00002e2: 00000000 00000000 00001111 00000001 00000000 00000000  ......
+00002e8: 00000000 00000000 00000000 00000000 00000000 00000000  ......
+00002ee: 00000000 00000000 00000111 00000000 00000000 00000000  ......
+00002f4: 00000001 00000000 00000000 00000000 00000000 00000000  ......
+00002fa: 00000000 00000000 00000000 00000000 00000000 00000000  ......
+0000300: 00000000 01011111 01101101 01100001 01101001 01101110  ._main
+0000306: 00000000 01011111 01110000 01110010 01101001 01101110  ._prin
+000030c: 01110100 01100110 00000000 01001100 01011111 00101110  tf.L_.
+0000312: 01110011 01110100 01110010 00000000 00000000 00000000  str...
+
+*/</span></pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-14">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-14">&#182;</a>
+              </div>
+              <h3 id="linking">Linking</h3>
+
+            </div>
+            
+        </li>
+        
+        
+        <li id="section-15">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-15">&#182;</a>
+              </div>
+              <p>Linking merges the <code>printf</code> function from the standard C library
+into the <code>hello.o</code> program. Given no flags, <code>clang hello.c</code>
+performs all four phases, outputting the preprocessed, compiled,
+assembled, and linked, therefore now <em>executable</em>, object code file
+<code>a.out</code>. Here’s a relevant portion of the output of <code>xxd -b a.out</code>:</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>
+<span class="hljs-comment">/*
+
+0001ffe: 00000000 00000000 00010001 00100010 00010000 01010001  ...".Q
+0002004: 00000000 00000000 00000000 00000000 00010001 01000000  .....@
+000200a: 01100100 01111001 01101100 01100100 01011111 01110011  dyld_s
+0002010: 01110100 01110101 01100010 01011111 01100010 01101001  tub_bi
+0002016: 01101110 01100100 01100101 01110010 00000000 01010001  nder.Q
+000201c: 01110010 00000000 10010000 00000000 01110010 00010000  r...r.
+0002022: 00010001 01000000 01011111 01110000 01110010 01101001  .@_pri
+0002028: 01101110 01110100 01100110 00000000 10010000 00000000  ntf...
+000202e: 00000000 00000000 00000000 00000001 01011111 00000000  ...._.
+0002034: 00000101 00000000 00000010 01011111 01101101 01101000  ..._mh
+000203a: 01011111 01100101 01111000 01100101 01100011 01110101  _execu
+0002040: 01110100 01100101 01011111 01101000 01100101 01100001  te_hea
+0002046: 01100100 01100101 01110010 00000000 00100001 01101101  der.!m
+000204c: 01100001 01101001 01101110 00000000 00100101 00000010  ain.%.
+
+*/</span></pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-16">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-16">&#182;</a>
+              </div>
+              <h2 id="1-4-processors-read-and-interpret-instructions-stored-in-memory">1.4 Processors Read and Interpret Instructions Stored in Memory</h2>
+
+            </div>
+            
+        </li>
+        
+        
+        <li id="section-17">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-17">&#182;</a>
+              </div>
+              <p>Execution of <code>a.out</code> in a shell:</p>
+<pre><code>$ ./a.out
+hello, world
+</code></pre><p>What happens here:</p>
+<ol>
+<li>The shell program reads each of the characters in <code>./a.out</code> into
+a register and then stores it in memory.</li>
+<li>When we hit <code>enter</code>, the shell loads the executable file <code>a.out</code>
+by copying it into memory.</li>
+<li>The processor begins executing the machine-language instructions
+in <code>hello</code>‘s <code>main</code> routine. The bytes comprising the string
+‘hello, world’ are copied from memory to a register file and from
+there to a display device.</li>
+</ol>
+
+            </div>
+            
+        </li>
+        
+    </ul>
+  </div>
+</body>
+</html>

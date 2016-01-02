@@ -26,6 +26,16 @@ layout: default
     {% endfor %}
     </ul>
 
+  <h2>Other executable notes</h2>
+
+  <ul class="post-list">
+    {% for link in site.data.doclinks %}
+      <li>
+          <a class="post-link" href="{{ link.url | prepend: site.baseurl }}">{{ link.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+
   <h2>Notes on the history and theory of programming languages, software development, and related topics</h2>
 
   <ul class="post-list">
