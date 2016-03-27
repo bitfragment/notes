@@ -16,7 +16,8 @@ Customized by Brian Lennon, 2016-01-24
 body {background-color: #262931;}
 
 a {color: #8997b0; font-family: 'Verdana', sans-serif; }
-div#notebook, div.CodeMirror, div.output_area pre, div.output_wrapper, div.prompt, div.CodeMirror pre {font-family:'Menlo', monospace; font-size: 12pt;}
+
+div#notebook, div.CodeMirror, div.output_area pre, div.output_wrapper, div.prompt, div.CodeMirror pre {font-family:'Menlo', monospace; font-size: 11pt;}
 
 /* Hiding the ipython log */
 div#ipython_notebook {display: none;}
@@ -25,8 +26,8 @@ div#ipython_notebook {display: none;}
 div.prompt {display: none; }
 
 div.cell { /* Tunes the space between cells */
-margin-top:0.25em;
-margin-bottom:0.25em;
+    margin-top:0.25em;
+    margin-bottom:0.25em;
 }
 
 #notebook li { /* More space between bullet points */
@@ -172,12 +173,11 @@ div.notebook_list_header {
 .rendered_html pre, .rendered_html code {
     font-size: 11pt;
     color: #8997b0;
-    line-height: 100%;
-    background: #303845;
+    line-height: 1.35em;
+    background: #262931;
 }
 body {
-    font-family: Verdana, Arial, sans-serif;
-    font-size: 13pt;
+    font-size: 14pt;
     line-height: 1.42857;
     color: #8997b0;
 }
@@ -199,7 +199,7 @@ body {
 
 .CodeMirror pre {
   font-family: 'Menlo', monospace;
-  font-size: 11pt;
+  font-size: 12pt;
 }
 
 .notebook_app {
@@ -232,12 +232,10 @@ body {
 div.output_html {color: #1e2429;}
 
 /* Formatting code in text, code*/
-.rendered_html table, .rendered_html th, .rendered_html tr, .rendered_html td {
-  border: 1px #a4b8cb solid;
-  color: #a4b8cb;
-  background-color: #303845 !important;
-  align-content: left !important;
+.rendered_html table {
+    float: left;
 }
+
 .navbar-default {
     background-color: #262931;
     border-color: #262931;
@@ -315,20 +313,40 @@ div.output_html {color: #1e2429;}
 /* Formatting code in markdown cells */
 div.text_cell_render {
     font-family: 'Verdana', sans-serif;
-    /*background: #303845;*/
-    background: #262931; /* Same color as page background */
+    font-size: 13pt;
+    background: #262931 !important; /* Same color as page background */
     font-weight: 310;
+    line-height: 1.75em;
+    letter-spacing: 0.1px;
     color: #8997b0;
 }
 /* Formatting code in markdown cells */
 div.text_cell_render pre {
     color: #8997b0;
-    background-color: #303845;
 }
 div.text_cell {
-    max-width: 100%;
+    max-width: 105ex;
     color: #8997b0;
 }
+
+div.text_cell_render h1 {
+    font-size: 2.5em;
+    color: #ffffff !important;
+}
+div.text_cell_render h2 {
+    font-size: 2em;
+    padding-top: 2em;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #39414F;
+}
+div.text_cell_render h3 {
+    font-size: 1.5em;
+}
+
+div.text_cell_render h4 {
+    font-size: 1.25em;
+}
+
 div.text_cell_render h1,
 div.text_cell_render h2,
 div.text_cell_render h3,
@@ -345,8 +363,6 @@ div.text_cell_render h6 {
     /*letter-spacing: 0.5px;*/
 }
 
-div.text_cell_render h2 { padding-top: 1em; }
-
 /* text in output area (i.e. print some_list) */
 div.output_html {color: #a4b8cb;}
 
@@ -356,6 +372,10 @@ div.output_html {color: #a4b8cb;}
   color: #a4b8cb;
   background-color: #39414F !important;
   align-content: left !important;
+}
+
+.rendered_html table code {
+    background-color: #39414F;
 }
 
 button.close {
@@ -453,8 +473,8 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket { color: #eeeeee; background: 
 .cm-s-ipython .CodeMirror-nonmatchingbracket { color: #eeeeee; background: rgba(191, 97, 106, .65) !important; }
 
 
-div.cell { border: medium solid #262931; padding: 0px; border-radius: 0px; }
-div.cell.selected { border: medium solid #3572C6; padding: 0px; border-radius: 0px; }
+div.cell { width: 105ex; border: medium solid #262931; padding: 0px; border-radius: 0px; }
+div.cell.selected { border: 1px solid #4c4c4c; padding: 10px; border-radius: 10px; }
 .edit_mode div.cell.selected {border: medium solid rgba(53, 108, 180, .45) !important; padding: 0px; border-radius: 0px; }
 div.cell.edit_mode {border: medium solid rgba(53, 108, 180, .45) !important; padding: 0px; border-radius: 0px;}
 
@@ -467,6 +487,7 @@ div.prompt {
     min-width: 11ex;
     font-size: 9.5pt;
 }
+
 div.input_area {
     margin-bottom: 0px;
     border: 0px;
@@ -479,7 +500,7 @@ div.prompt.input_prompt {
     font-weight: bold;
     font-size: 9.5pt;
     color: #5A647B;
-    background-color: #303845;
+    background-color: #303845 !important;
     width: 1em;
     padding-bottom: 0px;
     margin-bottom: 0px;
@@ -487,7 +508,7 @@ div.prompt.input_prompt {
 div.prompt.output_prompt {
     font-family: 'Menlo', monospace;
     font-weight: bold;
-    background-color: #39414F;
+    background-color: #39414F !important;
     color: #39414F;
     font-size: 9.5pt;
     width: 1em;
