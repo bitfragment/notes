@@ -2,8 +2,7 @@
 title: Scott, *Programming Language Pragmatics* (2009)
 ---
 
-```
-{% raw %}
+```bibtex{% raw %}
 @book{scott_programming_2009,
 	address = {Amsterdam ; Boston},
 	edition = {3rd ed},
@@ -13,8 +12,7 @@ title: Scott, *Programming Language Pragmatics* (2009)
 	publisher = {{Elsevier/Morgan} Kaufmann},
 	author = {Scott, Michael L.},
 	year = {2009}
-}
-{% endraw %}
+}{% endraw %}
 ```
 
 

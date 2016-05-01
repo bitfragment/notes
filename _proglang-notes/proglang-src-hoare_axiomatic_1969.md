@@ -2,7 +2,7 @@
 title: Hoare, "An Axiomatic Basis for Computer Programming" (1969)
 ---
 
-```
+```bibtex
 @article{hoare_axiomatic_1969,
 	title = {An Axiomatic Basis for Computer Programming},
 	volume = {12},

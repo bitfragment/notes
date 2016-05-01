@@ -2,8 +2,7 @@
 title: Moser, "Compiler Method of Automatic Programming" (1954)
 ---
 
-```
-{% raw %}
+```bibtex{% raw %}
 @inproceedings{moser_compiler_1954,
 	address = {Washington, {D.C.}},
 	title = {Compiler Method of Automatic Programming},
@@ -12,8 +11,7 @@ title: Moser, "Compiler Method of Automatic Programming" (1954)
 	author = {Moser, Nora B.},
 	year = {1954},
 	pages = {15--21}
-}
-{% endraw %}
+}{% endraw %}
 ```
 
 Describing Hopper's A-0 compiler as "a very limited prototype designed to prove the idea of compilers was practical," Moser 1954 observed that "A-2 is by no means the last word in compilers," but merely "one of the family which started with A-0" (17). Moser listed six services performed by any current compiler (including the A-2) for the programmer, all of them "with machine speed and accuracy, far surpassing human performance of the same operations" (18):

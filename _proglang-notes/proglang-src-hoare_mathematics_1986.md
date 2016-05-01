@@ -2,7 +2,7 @@
 title: Hoare, "Mathematics of Programming" (1986)
 ---
 
-```
+```bibtex
 @article{hoare_mathematics_1986,
 	title = {Mathematics of Programming},
 	journal = {Byte},

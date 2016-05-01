@@ -2,7 +2,7 @@
 title: "Flusser, *Does Writing Have a Future?* (2011; *Die Schrift: hat Schreiben Zukunft?*, 1987)"
 ---
 
-```
+```bibtex
 @book{flusser_does_2011,
 	address = {Minneapolis},
 	series = {Electronic mediations},

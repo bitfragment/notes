@@ -9,7 +9,6 @@ title: Topic index
 
 * ABSTRACTION
     - of software: [[proglang-src-colburn_philosophy_2000]]
-    - and logic: [[proglang-src-langer_introduction_1967]]
     - of process (as running program): [[proglang-src-bryant_computer_2003]]
     - of virtual memory: [[proglang-src-bryant_computer_2003]]
     - of file (as sequence of bytes): [[proglang-src-bryant_computer_2003]]
@@ -102,11 +101,6 @@ title: Topic index
 
 
 * LOGIC
-    - history: [[proglang-logic-history]]
-    - branches:
-        + [[proglang-src-langer_introduction_1967]]
-    - symbolic logic:
-        + [[proglang-src-langer_introduction_1967]]
 
 
 * MACHINE LANGUAGE
@@ -145,12 +139,8 @@ title: Topic index
     - development of, as distinct from proglang development: [[proglang-src-sammet_programming_1969]]
 
 
-* PHENOMENOLOGY (as method)
-    - [[proglang-src-introna_phenomenological_2011]]
-
 
 * POLYGLOT PROGRAMMING
-    - [[proglang-polyglot]]
     - [[proglang-src-backus_ibm_1954]]
 
 
@@ -158,11 +148,10 @@ title: Topic index
     - as concrete, in contrast with abstraction of algorithm: [[proglang-src-knuth_algorithms_1996]]
     - ontological status:
         + [[proglang-src-colburn_philosophy_2000]]
-        + as a string of characters: [[proglang-src-stuart_computation_2013]], [[proglang-src-bryant_computer_2003]]
+        + as a string of characters: [[proglang-src-bryant_computer_2003]]
         + as static text: [[proglang-src-colburn_philosophy_2000]]
         + as dynamic process: [[proglang-src-colburn_philosophy_2000]]
         + as mathematical expression: [[proglang-src-hoare_mathematics_1986]]
-        + "double life of," as both instructions and data: [[proglang-src-stuart_computation_2013]]
 
 
 * PROGRAMMER
@@ -178,8 +167,6 @@ title: Topic index
     - literate: [[proglang-src-knuth_algorithms_1996]], [[proglang-src-knuth_preface_1992]]
         + as essayistic: [[proglang-src-knuth_algorithms_1996]]
         + as creating works of literature: [[proglang-src-knuth_preface_1992]]
-    - paradigms:
-        + declarative programming: [[proglang-paradigm-declarative]]
 
 
 * PROGRAMMING LANGUAGE
@@ -196,9 +183,8 @@ title: Topic index
     - first conferences devoted to: [[proglang-src-sammet_programming_1969]]
     - purpose of:
           + problem-solving: [[proglang-src-sammet_programming_1969]]
-    - categorization of: [[proglang-categorization]]
+    - categorization of:
           + imperative: [[proglang-src-scott_programming_2009]]
-          + declarative: [[proglang-tpc-paradigm-declarative]], [[proglang-src-scott_programming_2009]]
 
 
 * PSEUDOCODE
@@ -213,7 +199,6 @@ title: Topic index
 
 * SOFTWARE
      - [[proglang-src-colburn_philosophy_2000]]
-     - conditions of possibility of: [[proglang-src-stuart_computation_2013]]
 
 
 * SPECIFICATION
@@ -227,6 +212,7 @@ title: Topic index
 
 * STANDARDIZATION
     - [[proglang-src-hoare_axiomatic_1969]]
+
 
 * SUBROUTINES
     - [[proglang-src-moser_compiler_1954]]

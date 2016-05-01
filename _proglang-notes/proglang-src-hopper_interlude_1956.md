@@ -2,7 +2,7 @@
 title: Hopper, "The Interlude 1954-1956" (1956)
 ---
 
-```
+```bibtex
 @inproceedings{hopper_interlude_1956,
 	address = {Washington, {D.C.}},
 	title = {The Interlude 1954-1956},

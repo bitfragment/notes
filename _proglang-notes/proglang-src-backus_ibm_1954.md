@@ -2,8 +2,7 @@
 title: Backus and Herrick, "IBM 701 Speedcoding and Other Automatic-Programming Systems" (1954)
 ---
 
-```
-{% raw %}
+```bibtex{% raw %}
 @inproceedings{backus_ibm_1954,
 	address = {Washington, {D.C.}},
 	title = {{IBM} 701 Speedcoding and Other Automatic-Programming Systems},
@@ -12,8 +11,7 @@ title: Backus and Herrick, "IBM 701 Speedcoding and Other Automatic-Programming 
 	author = {Backus, John W. and Herrick, Harlan},
 	year = {1954},
 	pages = {106–113}
-}
-{% endraw %}
+}{% endraw %}
 ```
 
 

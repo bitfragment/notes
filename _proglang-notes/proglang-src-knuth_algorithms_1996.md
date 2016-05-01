@@ -2,8 +2,7 @@
 title: Knuth, "Algorithms, Programs, and Computer Science" (1966)
 ---
 
-```
-{% raw %}
+```bibtex{% raw %}
 @incollection{knuth_algorithms_1996,
 	address = {Stanford, {CA}},
 	series = {{CSLI} lecture notes},
@@ -16,8 +15,7 @@ title: Knuth, "Algorithms, Programs, and Computer Science" (1966)
 	author = {Knuth, Donald E.},
 	year = {1996},
 	pages = {1–3}
-}
-{% endraw %}
+}{% endraw %}
 ```
 
 Algorithm and program

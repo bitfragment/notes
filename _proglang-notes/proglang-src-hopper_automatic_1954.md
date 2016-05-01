@@ -2,8 +2,7 @@
 title: Hopper, "Automatic Programming — Definitions" (1954)
 ---
 
-```
-{% raw %}
+```bibtex{% raw %}
 @inproceedings{hopper_automatic_1954,
 	address = {Washington, {D.C.}},
 	title = {Automatic Programming — Definitions},
@@ -12,8 +11,7 @@ title: Hopper, "Automatic Programming — Definitions" (1954)
 	author = {Hopper, Grace Murray},
 	year = {1954},
 	pages = {1--5}
-}
-{% endraw %}
+}{% endraw %}
 ```
 
 

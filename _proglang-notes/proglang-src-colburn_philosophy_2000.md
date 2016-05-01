@@ -2,8 +2,7 @@
 title: Colburn, *Philosophy and Computer Science* (2000)
 ---
 
-```
-{% raw %}
+```bibtex{% raw %}
 @book{colburn_philosophy_2000,
 	address = {Armonk, {N.Y}},
 	series = {Explorations in philosophy},
@@ -13,8 +12,7 @@ title: Colburn, *Philosophy and Computer Science* (2000)
 	publisher = {{M.E.} Sharpe},
 	author = {Colburn, Timothy R.},
 	year = {2000}
-}
-{% endraw %}
+}{% endraw %}
 ```
 
 

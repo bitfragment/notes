@@ -2,8 +2,7 @@
 title: Knuth, "Preface" to *Literate Programming* (1992)
 ---
 
-```
-{% raw %}
+```bibtex{% raw %}
 @incollection{knuth_preface_1992,
 	address = {Stanford, {CA}},
 	series = {{CSLI} Lecture Notes},
@@ -16,8 +15,7 @@ title: Knuth, "Preface" to *Literate Programming* (1992)
 	author = {Knuth, Donald E.},
 	year = {1992},
 	pages = {ix--xiii}
-}
-{% endraw %}
+}{% endraw %}
 ```
 
 * "At first, I thought programming was primarily analogous to musical composition — to the creation of intricate patterns, which are meant to be performed. But lately I have come to realize that a far better analogy is available: Programming is best regarded as the process of creating *works of literature*, which are meant to be read" [@knuth_preface_1992, ix].

@@ -2,7 +2,7 @@
 title: Rochester, "Symbolic Programming" (1953)
 ---
 
-```
+```bibtex
 @article{rochester_symbolic_1953,
 	title = {Symbolic Programming},
 	volume = {{EC-2}},

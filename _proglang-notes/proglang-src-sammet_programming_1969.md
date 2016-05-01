@@ -2,7 +2,7 @@
 title: "Sammet, *Programming Languages: History and Fundamentals* (1969)"
 ---
 
-```
+```bibtex
 @book{sammet_programming_1969,
 	address = {Englewood Cliffs, {N.J.}},
 	title = {Programming Languages: History and Fundamentals},
@@ -80,33 +80,40 @@ Machine language programming and symbolic assembly language programming
 
 A hardware instruction set is addressed in "machine language": binary characters or bits, e.g.:
 
-    011011 000000 000000 000000 000001 000000
-    +----+ +--------------------------------+
-    ^instruction
-           ^data
+```txt
+011011 000000 000000 000000 000001 000000
++----+ +--------------------------------+
+^instruction
+        ^data
+```
 
 Some call these next two forms "assembly language," but that's not worth debating, Sammet writes: the line between "machine language" and "assembly language" isn't clearly defined [@sammet_programming_1969, 2].
 
 The same expression, using a mnemonic code for the instruction:
 
-    CLA    000000 000000 000000 000001 000000
-    +----+ +--------------------------------+
-    ^instruction
-           ^data
+```txt
+CLA    000000 000000 000000 000001 000000
++----+ +--------------------------------+
+^instruction
+        ^data
+```
 
 The same expression, using decimal form for the data:
 
-    CLA 0 0 0 0 64
-    +-+ +--------+
-    ^instruction
-        ^data
-
+```txt
+CLA 0 0 0 0 64
++-+ +--------+
+^instruction
+    ^data
+```
 
 ### Symbolic assembly language programming ###
 
 The same expression, using mnemonic codes for both instructions and data (IBM 704 Symbolic Assembly Program [SAP] used this format):
 
-    CLA TEMP
-    +-+ +--+
-    ^instruction
-        ^variable standing for value in memory
+```txt
+CLA TEMP
++-+ +--+
+^instruction
+    ^variable standing for value in memory
+```

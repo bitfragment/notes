@@ -2,8 +2,7 @@
 title: Goldfinger, "New York University Compiler System" (1954)
 ---
 
-```
-{% raw %}
+```bibtex{% raw %}
 @inproceedings{goldfinger_new_1954,
 	address = {Washington, {D.C.}},
 	title = {New York University Compiler System},
@@ -12,8 +11,7 @@ title: Goldfinger, "New York University Compiler System" (1954)
 	author = {Goldfinger, Roy},
 	year = {1954},
 	pages = {30--33}
-}
-{% endraw %}
+}{% endraw %}
 ```
 
 

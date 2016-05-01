@@ -2,7 +2,7 @@
 title: Serrell, "On a Property of Natural Language and Its Use for the Design of Improved Machine Languages (Associative Machine Languages)" (1956)
 ---
 
-```
+```bibtex
 @inproceedings{serrell_property_1956,
 	address = {Washington, {D.C.}},
 	title = {On a Property of Natural Language and Its Use for the Design of Improved Machine Languages (Associative Machine Languages)},

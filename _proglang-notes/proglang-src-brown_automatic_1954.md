@@ -2,8 +2,7 @@
 title: Brown and Carr, "Automatic Programming and Its Development on the MIDAC" (1954)
 ---
 
-```
-{% raw %}
+```bibtex{% raw %}
 @inproceedings{brown_automatic_1954,
 	address = {Washington, {D.C.}},
 	title = {Automatic Programming and Its Development on the {MIDAC}},
@@ -12,8 +11,7 @@ title: Brown and Carr, "Automatic Programming and Its Development on the MIDAC" 
 	author = {Brown, J. H. and Carr {III}, John W.},
 	year = {1954},
 	pages = {84--97}
-}
-{% endraw %}
+}{% endraw %}
 ```
 
 

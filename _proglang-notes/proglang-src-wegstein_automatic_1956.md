@@ -2,7 +2,7 @@
 title: Wegstein, "Automatic Coding Principles" (1956)
 ---
 
-```
+```bibtex
 @inproceedings{wegstein_automatic_1956,
 	address = {Washington, {D.C.}},
 	title = {Automatic Coding Principles},

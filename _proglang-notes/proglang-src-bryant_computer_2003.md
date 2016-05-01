@@ -2,7 +2,7 @@
 title: "Bryant and O'Hallaron, *Computer Systems: A Programmer's Perspective* (2003)"
 ---
 
-```
+```bibtex
 @book{bryant_computer_2003,
 	address = {Upper Saddle River, {NJ}},
 	title = {Computer Systems: A Programmer's Perspective},
