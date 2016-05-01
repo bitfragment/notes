@@ -4,6 +4,6 @@ title: About
 permalink: /about/
 ---
 
-Active reading, research, and thinking notes in a semipublishable state.
+Notes in a publishable or semipublishable state.
 
 See also [bitfragment.net](http://bitfragment.net).

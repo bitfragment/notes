@@ -1,5 +1,6 @@
 ---
 title: Brown and Carr, "Automatic Programming and Its Development on the MIDAC" (1954)
+type: src
 ---
 
 ```bibtex{% raw %}

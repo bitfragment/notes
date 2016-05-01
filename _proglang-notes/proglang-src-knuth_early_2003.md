@@ -1,5 +1,6 @@
 ---
 title: Knuth, "The Early Development of Programming Languages" (1977/2003)
+type: src
 ---
 
 ```bibtex{% raw %}

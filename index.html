@@ -16,8 +16,20 @@ layout: default
     {% endfor %}
   </ul>
 
-  <h2>Jupyter Notebooks</h2>
+  <h2>Interactive notebooks</h2>
 
+  <h3>Tonic notebooks (hosted remotely)</h3>
+  <ul class="post-list">
+    <li><a href="https://tonicdev.com/bitfragment">Profile page</a>
+    <li><a href="https://tonicdev.com/bitfragment/js-async-basics">JavaScript asynchrony: basics</a></li>
+    <li><a href="https://tonicdev.com/bitfragment/js-async-latch">JavaScript asynchrony: latch</a></li>
+    <li><a href="https://tonicdev.com/bitfragment/js-async-gate">JavaScript asynchrony: gate</a></li>
+    <li><a href="https://tonicdev.com/bitfragment/mem-alloc">Simulating memory allocation</a></li>
+  </ul>
+
+  <h3>Beaker notebooks (hosted remotely)</h3>
+
+  <h3>Jupyter notebooks (hosted locally)</h3>
   <ul class="post-list">
     {% for link in site.data.nbviewer %}
       <li>
@@ -26,29 +38,38 @@ layout: default
     {% endfor %}
     </ul>
 
-  <h2>Other executable notes</h2>
-
-  <ul class="post-list">
-    {% for link in site.data.doclinks %}
-      <li>
-          <a class="post-link" href="{{ link.url | prepend: site.baseurl }}">{{ link.title }}</a>
-      </li>
-    {% endfor %}
-  </ul>
-
   <h2>Notes on the history and theory of programming languages, software development, and related topics</h2>
 
+  <h3>Accumulators</h3>
   <ul class="post-list">
-    {% for note in site.proglang-notes %}{% unless note.title contains "Bibliography" %}
+    {% for note in site.proglang-notes %}{% if note.type contains "adm" %}
       <li>
           <a class="post-link" href="{{ note.url | prepend: site.baseurl }}">{{ note.title }}</a>
       </li>
-    {% endunless %}{% endfor %}
+    {% endif %}{% endfor %}
+  </ul>
+
+  <h3>Arguments</h3>
+  <ul class="post-list">
+    {% for note in site.proglang-notes %}{% if note.type contains "arg" %}
+      <li>
+          <a class="post-link" href="{{ note.url | prepend: site.baseurl }}">{{ note.title }}</a>
+      </li>
+    {% endif %}{% endfor %}
+  </ul>
+
+  <h3>Sources</h3>
+  <ul class="post-list">
+    {% for note in site.proglang-notes %}{% if note.type contains "src" %}
+      <li>
+          <a class="post-link" href="{{ note.url | prepend: site.baseurl }}">{{ note.title }}</a>
+      </li>
+    {% endif %}{% endfor %}
   </ul>
 
   <h3>Bibliographies</h3>
   <ul class="post-list">
-    {% for note in site.proglang-notes %}{% if note.title contains "Bibliography" %}
+    {% for note in site.proglang-notes %}{% if note.type contains "bib" %}
       <li>
           <a class="post-link" href="{{ note.url | prepend: site.baseurl }}">{{ note.title }}</a>
       </li>

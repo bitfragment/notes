@@ -1,5 +1,6 @@
 ---
 title: Wegstein, "Automatic Coding Principles" (1956)
+type: src
 ---
 
 ```bibtex

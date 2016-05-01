@@ -1,5 +1,6 @@
 ---
 title: Serrell, "On a Property of Natural Language and Its Use for the Design of Improved Machine Languages (Associative Machine Languages)" (1956)
+type: src
 ---
 
 ```bibtex

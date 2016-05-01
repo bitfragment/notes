@@ -1,5 +1,6 @@
 ---
 title: 'Bibliography: Kleine, "Historic documents in computer science and engineering"'
+type: bib
 ---
 
 Karl Kleine, "Historic documents in computer science and engineering": <http://www.fh-jena.de/~kleine/history/>

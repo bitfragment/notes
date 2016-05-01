@@ -1,5 +1,6 @@
 ---
 title: Rochester, "Symbolic Programming" (1953)
+type: src
 ---
 
 ```bibtex

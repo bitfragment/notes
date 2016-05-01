@@ -1,5 +1,6 @@
 ---
 title: The Life of a Program
+type: arg
 ---
 
 Source: [[proglang-src-bryant_computer_2003]], Chapter 1: A Tour of Computer Systems

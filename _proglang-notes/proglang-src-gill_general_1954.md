@@ -1,5 +1,6 @@
 ---
 title: Stanley, "General Discussion at End of Thursday Afternoon Session" (1954)
+type: src
 ---
 
 ```bibtex{% raw %}

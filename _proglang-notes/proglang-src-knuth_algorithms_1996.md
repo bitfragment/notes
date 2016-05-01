@@ -1,5 +1,6 @@
 ---
 title: Knuth, "Algorithms, Programs, and Computer Science" (1966)
+type: src
 ---
 
 ```bibtex{% raw %}

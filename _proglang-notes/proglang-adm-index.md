@@ -1,5 +1,6 @@
 ---
 title: Topic index
+type: adm
 ---
 
 * ALGORITHM

@@ -1,5 +1,6 @@
 ---
 title: Backus and Herrick, "IBM 701 Speedcoding and Other Automatic-Programming Systems" (1954)
+type: src
 ---
 
 ```bibtex{% raw %}

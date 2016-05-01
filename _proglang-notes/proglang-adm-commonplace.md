@@ -1,5 +1,6 @@
 ---
 title: Commonplace book
+type: adm
 ---
 
 

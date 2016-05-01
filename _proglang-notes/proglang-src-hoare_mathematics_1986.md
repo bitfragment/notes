@@ -1,5 +1,6 @@
 ---
 title: Hoare, "Mathematics of Programming" (1986)
+type: src
 ---
 
 ```bibtex

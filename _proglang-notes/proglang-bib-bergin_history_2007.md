@@ -1,5 +1,6 @@
 ---
 title: 'Bibliography: Bergin, "A History of the History of Programming Languages" (2007)'
+type: bib
 ---
 
 Bergin's timeline:

@@ -1,5 +1,6 @@
 ---
 title: Moser, "Compiler Method of Automatic Programming" (1954)
+type: src
 ---
 
 ```bibtex{% raw %}

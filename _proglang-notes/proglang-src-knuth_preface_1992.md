@@ -1,5 +1,6 @@
 ---
 title: Knuth, "Preface" to Literate Programming (1992)
+type: src
 ---
 
 ```bibtex{% raw %}

@@ -1,5 +1,6 @@
 ---
 title: Scott, Programming Language Pragmatics (2009)
+type: src
 ---
 
 ```bibtex{% raw %}

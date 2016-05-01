@@ -1,5 +1,6 @@
 ---
 title: Gorn, "Planning Universal Semi-Automatic Coding" (1954)
+type: src
 ---
 
 ```bibtex{% raw %}

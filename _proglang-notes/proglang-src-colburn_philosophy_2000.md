@@ -1,5 +1,6 @@
 ---
 title: Colburn, Philosophy and Computer Science (2000)
+type: src
 ---
 
 ```bibtex{% raw %}

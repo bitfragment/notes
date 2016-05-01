@@ -1,5 +1,6 @@
 ---
 title: "Bryant and O'Hallaron, Computer Systems: A Programmer's Perspective (2003)"
+type: src
 ---
 
 ```bibtex

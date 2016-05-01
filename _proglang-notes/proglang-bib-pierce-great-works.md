@@ -1,5 +1,6 @@
 ---
 title: 'Bibliography: Pierce, "Great works in programming languages"'
+type: bib
 ---
 
 Source: Benjamin C. Pierce, [Great Works in Programming Languages](http://www.cis.upenn.edu/~bcpierce/courses/670Fall04/GreatWorksInPL.shtml) (includes links to PDF documents)

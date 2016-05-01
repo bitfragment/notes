@@ -1,5 +1,6 @@
 ---
 title: Hopper, "The Interlude 1954-1956" (1956)
+type: src
 ---
 
 ```bibtex

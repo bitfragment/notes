@@ -1,5 +1,6 @@
 ---
 title: 'Bibliography: Crary, "Classic Papers in Programming Languages and Logic"'
+type: bib
 ---
 
 Source: [Classic Papers in Programming Languages and Logic](http://www.cs.cmu.edu/~crary/819-f09/)

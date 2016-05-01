@@ -1,5 +1,6 @@
 ---
 title: 'McGee, "Omnicode — A Common Language Programming System" (1954)'
+type: src
 ---
 
 ```bibtex{% raw %}

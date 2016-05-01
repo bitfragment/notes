@@ -1,5 +1,6 @@
 ---
 title: Hoare, "An Axiomatic Basis for Computer Programming" (1969)
+type: src
 ---
 
 ```bibtex

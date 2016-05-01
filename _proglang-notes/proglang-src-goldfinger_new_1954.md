@@ -1,5 +1,6 @@
 ---
 title: Goldfinger, "New York University Compiler System" (1954)
+type: src
 ---
 
 ```bibtex{% raw %}

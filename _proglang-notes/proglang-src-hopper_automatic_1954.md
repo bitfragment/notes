@@ -1,5 +1,6 @@
 ---
 title: Hopper, "Automatic Programming — Definitions" (1954)
+type: src
 ---
 
 ```bibtex{% raw %}
