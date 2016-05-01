@@ -1,5 +1,5 @@
 ---
-title: Scott, *Programming Language Pragmatics* (2009)
+title: Scott, Programming Language Pragmatics (2009)
 ---
 
 ```bibtex{% raw %}

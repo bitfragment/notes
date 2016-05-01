@@ -1,5 +1,5 @@
 ---
-title: Colburn, *Philosophy and Computer Science* (2000)
+title: Colburn, Philosophy and Computer Science (2000)
 ---
 
 ```bibtex{% raw %}

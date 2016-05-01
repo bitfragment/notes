@@ -1,5 +1,5 @@
 ---
-title: "Sammet, *Programming Languages: History and Fundamentals* (1969)"
+title: "Sammet, Programming Languages: History and Fundamentals (1969)"
 ---
 
 ```bibtex
