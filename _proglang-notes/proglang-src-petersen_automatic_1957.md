@@ -24,4 +24,4 @@ type: src
 
 Jean Sammet: "Do I understand you to say you translated between A-2 pseudo-code and the G.P. compiler?"
 
-Petersen: "Yes. The programmer can write the instructions in G.P. language and if he comes to a point where he would like to switch to a three-address code, he can write that along with the G.P., if he thinks it saves him time. The three-address line of coding would be picked up by an interpreter and be interpreted into regular G.P. coding. The output of the interpreter would go through the G.P. compiler.  
+Petersen: "Yes. The programmer can write the instructions in G.P. language and if he comes to a point where he would like to switch to a three-address code, he can write that along with the G.P., if he thinks it saves him time. The three-address line of coding would be picked up by an interpreter and be interpreted into regular G.P. coding. The output of the interpreter would go through the G.P. compiler."
