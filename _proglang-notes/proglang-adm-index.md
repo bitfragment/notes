@@ -37,11 +37,14 @@ type: adm
 
 * AUTOMATION
     - of programming
-        + [[proglang-src-hopper_automatic_1954]]
+        + [[proglang-hst-holberton_merge_sort]]
         + [[proglang-src-brown_automatic_1954]]
         + [[proglang-src-backus_ibm_1954]]
-        + [[proglang-src-hopper_interlude_1956]]
         + [[proglang-src-gill_general_1954]]
+        + [[proglang-src-hopper_automatic_1954]]
+        + [[proglang-src-hopper_interlude_1956]]
+        + [[proglang-src-hopper_keynote_1978]]
+        + [[proglang-src-petersen_automatic_1957]]
         + [[proglang-src-wegstein_automatic_1956]]
 
 
@@ -143,6 +146,7 @@ type: adm
 
 * POLYGLOT PROGRAMMING
     - [[proglang-src-backus_ibm_1954]]
+    - [[proglang-src-petersen_automatic_1957]]
 
 
 * PROGRAM
