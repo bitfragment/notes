@@ -1,5 +1,5 @@
 ---
-title: 
+title:
 type: src
 ---
 
@@ -14,8 +14,6 @@ type: src
 	author = {Bemer, Robert W.},
 	month = apr,
 	year = {1957},
-	note = {Local system: LIAS1060941
-Local system: (OCoLC)10145653},
 	pages = {29--38}
 }
 ```
