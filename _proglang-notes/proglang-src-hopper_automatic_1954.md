@@ -68,23 +68,23 @@ Hopper closed "Automatic Programming — Definitions" (1954) by calling for the 
 
 "An assembly routine, after decoding each pseudocode and locating the corresponding subroutine, processes the subroutine, suitably altering and entering addresses, to produce a problem routine (perhaps not completely specific because it may still require certain parameters)" (2)
 
-### Conversion
+#### Conversion
 
 "A conversion routine aptly describes itself, since its task is to convert pseudocode to computer code or to call suitable subroutines, to convert relative and floating addresses to specific addresses, to convert decimal quantities into binary notation, to deal with floating-point quantities, and to edit. It may produce computer coding or it may contain within itself an interpretive routine." (3)
 
 "Whether or not conversion routines are required is dictated by whether the computer is binary or decimal, its range, and its acceptable of alphabetic data. There are some mathematicians willing to think in binary but it is a moot question whether businessmen and the general public are willing to do so. For commercial applications, it is likely that the binary computer will demand very complete conversion routines." (4)
 
-### Interpretation
+#### Interpretation
 
 "An interpretive routine processes the pseudocode and the data simultaneously. Having decoded the pseudocode, it locates the subroutine, supplies the data, and carries out the operation before proceeding to the next element of pseudocode." (3)
 
 "[I]f the computer is not automatically checked, an interpretive routine may be safer. Programming is difficult enough to check on paper, but when the computer generates it, it is a little more than difficult to check it. It is probably best to immediately run numbers through it and check the results. However, if the subroutines and compiler have been checked out, and a checked computer is used, all resultant mistakes can be referred back to the mathematician who stated the problem." (4)
 
-### Compilation
+#### Compilation
 
 "A compiling routine combines most of the functions of the other three. It employs conversion and editing routines for data as subroutines, it interprets pseudocode, and it assembles a specific program. It differs from the assembly routine in its use of dynamic subroutines." (3)
 
-### Hardware constraints
+## Hardware constraints
 
 "The computer characteristic most influential in the design of executive techniques seems to be the quantity and availability of storage. At least two kinds of storage are available in all computers; three kinds are distinguishable in many computers; internal, secondary and external." (3)
 
