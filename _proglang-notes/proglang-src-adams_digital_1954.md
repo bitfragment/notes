@@ -1,5 +1,5 @@
 ---
-title: 'Adams and Gill, Digital Computers: Business Applications --- Notes from a Special Summer Program (1954)'
+title: 'Adams and Gill, Digital Computers: Business Applications — Notes from a Special Summer Program (1954)'
 type: src
 ---
 
