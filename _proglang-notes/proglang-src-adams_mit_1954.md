@@ -1,9 +1,9 @@
 ---
-title: Adams and Laning, "The MIT Systems of Automatic Coding: Comprehensive, Summer Session, and Algebraic" (1954)
+title: 'Adams and Laning, "The MIT Systems of Automatic Coding: Comprehensive, Summer Session, and Algebraic" (1954)'
 type: src
 ---
 
-```bibtex
+```bibtex{% raw %}
 @inproceedings{adams_mit_1954,
 	address = {Washington, D.C.},
 	title = {The {MIT} {Systems} of {Automatic} {Coding}: {Comprehensive}, {Summer} {Session}, and {Algebraic}},
@@ -12,7 +12,7 @@ type: src
 	author = {Adams, Charles W. and Laning, Jr., J. H.},
 	year = {1954},
 	pages = {40--68}
-}
+}{% endraw %}
 ```
 
 *Goal of an automatic coding system.* "The ultimate goal of any automatic coding technique is presumably to maximize the simplicity and efficiency of solving a problem on a digital computer. Improvements can be made in [new line] 1. Coding, in which technical personnel are required to [new line] a. learn --- comprehend and remember a computer code, [new line] b. write --- select and record a sequence of instructions, [new line] c. debug --- locate and correct any mistakes which occur. [new line] 2. Clerical operations, in which trained personnel [new line] a. prepare cards or tapes with programs and data [new line] b. operate the computer --- load and unload readers and recorders, push buttons, log, record data, etc. [new line] c. make corrections --- change computer switches or punch new cards. [new line] 3. Computer operation, including [new line] a. debuggng time [new line] b. input-output time [new line] c. computation time." (40)

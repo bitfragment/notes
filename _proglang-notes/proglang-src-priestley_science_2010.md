@@ -1,5 +1,5 @@
 ---
-title: Priestley, A Science of Operations: Machines, Logic and the Invention of Programming (2010)
+title: 'Priestley, A Science of Operations: Machines, Logic and the Invention of Programming (2010)'
 type: src
 ---
 

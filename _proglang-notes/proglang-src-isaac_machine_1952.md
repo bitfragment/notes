@@ -3,7 +3,7 @@ title: Isaac, "Machine Aids to Coding" (1952)
 type: src
 ---
 
-```bibtex
+```bibtex{% raw %}
 @inproceedings{isaac_machine_1952,
 	address = {New York, NY, USA},
 	series = {{ACM} '52},
@@ -17,7 +17,7 @@ type: src
 	author = {Isaac, Earl J.},
 	year = {1952},
 	pages = {17--18},
-}
+}{% endraw %}
 ```
 
 ## Coding is translation

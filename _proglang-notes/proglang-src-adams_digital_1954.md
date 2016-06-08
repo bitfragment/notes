@@ -1,16 +1,16 @@
 ---
-title: 'Adams and Gill, Digital Computers: Business Applications --- Notes from a Special Summer Program' (1954)
+title: 'Adams and Gill, Digital Computers: Business Applications --- Notes from a Special Summer Program (1954)'
 type: src
 ---
 
-```bibtex
+```bibtex{% raw %}
 @book{adams_digital_1954,
 	address = {Cambridge, MA},
 	title = {Digital {Computers}: {Business} {Applications}—{Notes} from a {Special} {Summer} {Program}},
 	publisher = {MIT Press},
 	author = {Adams, Charles W. and Gill, Stanley},
 	year = {1954}
-  }
+  }{% endraw %}
 ```
 
 ## Translation rather than virtualization
