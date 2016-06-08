@@ -1,0 +1,500 @@
+{
+    "beaker": "2",
+    "evaluators": [
+        {
+            "name": "JavaScript",
+            "plugin": "JavaScript",
+            "view": {
+                "cm": {
+                    "mode": "javascript",
+                    "background": "#FFE0F0"
+                }
+            },
+            "languageVersion": "ES2015"
+        },
+        {
+            "name": "Python3",
+            "plugin": "Python3",
+            "setup": "%matplotlib inline\nimport numpy\nimport matplotlib\nfrom matplotlib import pylab, mlab, pyplot\nnp = numpy\nplt = pyplot\nfrom IPython.display import display\nfrom IPython.core.pylabtools import figsize, getfigs\nfrom pylab import *\nfrom numpy import *\n",
+            "view": {
+                "cm": {
+                    "mode": "python"
+                }
+            }
+        }
+    ],
+    "cells": [
+        {
+            "id": "sectionHjIziM",
+            "type": "section",
+            "title": "Insertion sort",
+            "level": 1,
+            "evaluatorReader": false,
+            "collapsed": false
+        },
+        {
+            "id": "sectionwg3kOT",
+            "type": "section",
+            "title": "Sources",
+            "level": 2,
+            "evaluatorReader": false,
+            "collapsed": false
+        },
+        {
+            "id": "markdownOVGdWc",
+            "type": "markdown",
+            "body": [
+                "- Cormen et al., *Introduction to Algorithms*, 3rd ed.",
+                "- https://en.wikipedia.org/wiki/Insertion_sort",
+                "- http://www.sorting-algorithms.com/insertion-sort"
+            ],
+            "evaluatorReader": false
+        },
+        {
+            "id": "sectionC8Gx0S",
+            "type": "section",
+            "title": "Notes",
+            "level": 2,
+            "evaluatorReader": false,
+            "collapsed": false
+        },
+        {
+            "id": "markdownV1woy2",
+            "type": "markdown",
+            "body": [
+                "Insertion sort is efficient for small collections. It resembles the sorting of a hand of playing cards, where one card at a time is drawn and inserted into the already sorted hand."
+            ],
+            "evaluatorReader": false
+        },
+        {
+            "id": "markdownb9Zk4W",
+            "type": "markdown",
+            "body": [
+                "Insertion sort uses an **incremental approach**, processing one element of the collection at a time. It can be contrasted with so-called **divide and conquer** approaches."
+            ],
+            "evaluatorReader": false
+        },
+        {
+            "id": "sectionuPnLcP",
+            "type": "section",
+            "title": "Pseudocode",
+            "level": 2,
+            "evaluatorReader": false,
+            "collapsed": false
+        },
+        {
+            "id": "markdownbzWN8Q",
+            "type": "markdown",
+            "body": [
+                "Using a zero-based array."
+            ],
+            "evaluatorReader": false
+        },
+        {
+            "id": "markdown0KI5yT",
+            "type": "markdown",
+            "body": [
+                "```",
+                "for j = 1 to A.length",
+                "    key = A[j]",
+                "    i = j - 1",
+                "    while i >= 0 and A[i] > key",
+                "        A[i + 1] = A[i]",
+                "        i = i + 1",
+                "    A[i + 1] = key",
+                "```"
+            ],
+            "evaluatorReader": false
+        },
+        {
+            "id": "section8LNxk7",
+            "type": "section",
+            "title": "Pseudocode annotated",
+            "level": 3,
+            "evaluatorReader": false,
+            "collapsed": false
+        },
+        {
+            "id": "markdownOtSkJk",
+            "type": "markdown",
+            "body": [
+                "For each element in the array beginning with the second element, designate it the *key* element and compare this key element with the element preceding it. If the value of the preceding element is larger, move the previous element into the place of the current element, increment the index variable designating the array index of the previous element, and repeat until the value of the previous element is no longer greater than the value of the key element. When this procedure is complete for the key element, reassign the key element to the incremented value of the index variable."
+            ],
+            "evaluatorReader": false
+        },
+        {
+            "id": "markdown1CJLyS",
+            "type": "markdown",
+            "body": [
+                "We iterate over the array. In a second loop, using each element designated by the first loop serving as key, we iterate over the segment of the array from the preceding element to the end of the array, moving the preceding element forward until its value is no longer greater than the value of the key element. In this way every element that is out of sort order is moved forward until it settles in sorted order."
+            ],
+            "evaluatorReader": false
+        },
+        {
+            "id": "section8v5bQV",
+            "type": "section",
+            "title": "Animations",
+            "level": 2,
+            "evaluatorReader": false,
+            "collapsed": false
+        },
+        {
+            "id": "sectionowom7x",
+            "type": "section",
+            "title": "Version 2",
+            "level": 3,
+            "evaluatorReader": false,
+            "collapsed": false
+        },
+        {
+            "id": "markdownAycwee",
+            "type": "markdown",
+            "body": [
+                "- http://bl.ocks.org/bitfragment/967ad24daef055bd4d285ca2c828d273",
+                "- http://codepen.io/bitfragment/pen/gryqrz"
+            ],
+            "evaluatorReader": false
+        },
+        {
+            "id": "sectiona9gIQt",
+            "type": "section",
+            "title": "Version 1",
+            "level": 3,
+            "evaluatorReader": false,
+            "collapsed": false
+        },
+        {
+            "id": "markdown3abCKg",
+            "type": "markdown",
+            "body": [
+                "- http://bl.ocks.org/bitfragment/7922218dcd8b1ca8c46e678e0834d3d3",
+                "- http://codepen.io/bitfragment/pen/XdQOJJ"
+            ],
+            "evaluatorReader": false
+        },
+        {
+            "id": "sectionpPdivx",
+            "type": "section",
+            "title": "Implementations",
+            "level": 2,
+            "evaluatorReader": false,
+            "collapsed": false
+        },
+        {
+            "id": "markdownB33BCz",
+            "type": "markdown",
+            "body": [
+                "Following the above pseudocode."
+            ],
+            "evaluatorReader": false
+        },
+        {
+            "id": "codeXQ5fJU",
+            "type": "code",
+            "evaluator": "JavaScript",
+            "input": {
+                "body": [
+                    "beaker.a = [2, 4, 3, 0, 1];",
+                    "",
+                    "const insertionSort = a => {",
+                    "    let i, j, key, l = a.length;",
+                    "    for (j = 1; j < l; j++) {",
+                    "        key = a[j];",
+                    "        i = j - 1;",
+                    "        while (i >= 0 && a[i] > key) {",
+                    "            a[i + 1] = a[i];",
+                    "            i--;",
+                    "        }",
+                    "        a[i + 1] = key;",
+                    "    }",
+                    "    return a;",
+                    "};",
+                    "",
+                    "insertionSort(beaker.a)"
+                ]
+            },
+            "output": {
+                "state": {},
+                "result": [
+                    0,
+                    1,
+                    2,
+                    3,
+                    4
+                ],
+                "selectedType": "Text",
+                "pluginName": "JavaScript",
+                "elapsedTime": 293,
+                "height": 36
+            },
+            "evaluatorReader": true,
+            "lineCount": 17
+        },
+        {
+            "id": "code1Fp0xH",
+            "type": "code",
+            "evaluator": "Python3",
+            "input": {
+                "body": [
+                    "def insertion_sort(a):",
+                    "    for j in range(1, len(a)):",
+                    "        key = a[j]",
+                    "        i = j - 1",
+                    "        while (i >= 0 and a[i] > key):",
+                    "            a[i + 1] = a[i]",
+                    "            i -= 1",
+                    "        a[i + 1] = key",
+                    "    return a",
+                    "",
+                    "insertion_sort(beaker.a)"
+                ]
+            },
+            "output": {
+                "state": {},
+                "result": "<div class=\"output_subarea output_text\"><pre>[0, 1, 2, 3, 4]</pre></div>",
+                "selectedType": "Html",
+                "pluginName": "Python3",
+                "shellId": "4A05BDC88ABC48F8915DF9CC0A369FCD",
+                "elapsedTime": 446,
+                "dataresult": [
+                    0,
+                    1,
+                    2,
+                    3,
+                    4
+                ],
+                "height": 51
+            },
+            "evaluatorReader": true,
+            "lineCount": 11
+        },
+        {
+            "id": "markdown1mlALu",
+            "type": "markdown",
+            "body": [
+                "Printing at each step:"
+            ],
+            "evaluatorReader": false
+        },
+        {
+            "id": "codeI5NAP3",
+            "type": "code",
+            "evaluator": "Python3",
+            "input": {
+                "body": [
+                    "def insertion_sort_print(a):",
+                    "    print(a)",
+                    "    for j in range(1, len(a)):",
+                    "        key = a[j]",
+                    "        i = j - 1",
+                    "        while (i >= 0 and a[i] > key):",
+                    "            a[i + 1] = a[i]",
+                    "            print(a)",
+                    "            i -= 1",
+                    "        a[i + 1] = key",
+                    "    return a",
+                    "",
+                    "insertion_sort_print([2, 3, 1])"
+                ]
+            },
+            "output": {
+                "state": {},
+                "result": {
+                    "type": "Results",
+                    "outputdata": [
+                        {
+                            "type": "out",
+                            "value": "[2, 3, 1]\n[2, 3, 3]\n[2, 2, 3]\n"
+                        }
+                    ],
+                    "payload": "<div class=\"output_subarea output_text\"><pre>[1, 2, 3]</pre></div>"
+                },
+                "selectedType": "Results",
+                "pluginName": "Python3",
+                "shellId": "4A05BDC88ABC48F8915DF9CC0A369FCD",
+                "elapsedTime": 356,
+                "dataresult": [
+                    1,
+                    2,
+                    3
+                ],
+                "height": 102
+            },
+            "evaluatorReader": true,
+            "lineCount": 13
+        },
+        {
+            "id": "markdownm6Sx2h",
+            "type": "markdown",
+            "body": [
+                "Generator:"
+            ],
+            "evaluatorReader": false
+        },
+        {
+            "id": "codeCPwxj8",
+            "type": "code",
+            "evaluator": "Python3",
+            "input": {
+                "body": [
+                    "def insertion_sort_generator(a):",
+                    "    for j in range(1, len(a)):",
+                    "        key = a[j]",
+                    "        i = j - 1",
+                    "        while (i >= 0 and a[i] > key):",
+                    "            a[i + 1] = a[i]",
+                    "            yield a",
+                    "            i -= 1",
+                    "        a[i + 1] = key",
+                    "    yield a",
+                    "",
+                    "sorts = insertion_sort_generator([2, 3, 1])",
+                    "",
+                    "for sort in sorts:",
+                    "    print(sort)"
+                ]
+            },
+            "output": {
+                "state": {},
+                "result": {
+                    "type": "Results",
+                    "outputdata": [
+                        {
+                            "type": "out",
+                            "value": "[2, 3, 3]\n[2, 2, 3]\n[1, 2, 3]\n"
+                        }
+                    ]
+                },
+                "selectedType": "Results",
+                "pluginName": "Python3",
+                "shellId": "4A05BDC88ABC48F8915DF9CC0A369FCD",
+                "elapsedTime": 284,
+                "dataresult": [
+                    [
+                        1,
+                        2,
+                        3,
+                        4,
+                        5
+                    ],
+                    [
+                        1,
+                        2,
+                        3,
+                        4,
+                        5
+                    ],
+                    [
+                        1,
+                        2,
+                        3,
+                        4,
+                        5
+                    ]
+                ],
+                "height": 84
+            },
+            "evaluatorReader": true,
+            "lineCount": 15
+        },
+        {
+            "id": "markdowniAMO9q",
+            "type": "markdown",
+            "body": [
+                "Generator that loops. Use `b = a[:]` rather than `b = a` to avoid a being passed by reference."
+            ],
+            "evaluatorReader": false
+        },
+        {
+            "id": "codejEJWY9",
+            "type": "code",
+            "evaluator": "Python3",
+            "input": {
+                "body": [
+                    "def insertion_sort(a):",
+                    "    b = a[:]",
+                    "    sorts = [b]",
+                    "    for j in range(1, len(a)):",
+                    "        key = a[j]",
+                    "        i = j - 1",
+                    "        while (i >= 0 and a[i] > key):",
+                    "            a[i + 1] = a[i]",
+                    "            yield a",
+                    "            b = a[:]",
+                    "            sorts.append(b)",
+                    "            i -= 1",
+                    "        a[i + 1] = key",
+                    "    yield a",
+                    "    b = a[:]",
+                    "    sorts.append(b)",
+                    "    ",
+                    "    while sorts:",
+                    "        for sort in sorts:",
+                    "            yield sort"
+                ]
+            },
+            "output": {
+                "state": {},
+                "selectedType": "Hidden",
+                "pluginName": "Python3",
+                "shellId": "4A05BDC88ABC48F8915DF9CC0A369FCD",
+                "elapsedTime": 393
+            },
+            "evaluatorReader": true,
+            "lineCount": 20
+        },
+        {
+            "id": "markdownCCT8sq",
+            "type": "markdown",
+            "body": [
+                "Slightly different implementation using tuple unpacking to swap elements."
+            ],
+            "evaluatorReader": false
+        },
+        {
+            "id": "codedf5lNV",
+            "type": "code",
+            "evaluator": "Python3",
+            "input": {
+                "body": [
+                    "def insertion_sort_2(a):",
+                    "    for i in range(1, len(a)):",
+                    "        j = i",
+                    "        while j > 0 and a[j - 1] > a[j]:",
+                    "            a[j], a[j - 1] = a[j - 1], a[j]",
+                    "            j -= 1",
+                    "    return a",
+                    "",
+                    "insertion_sort_2(beaker.a)"
+                ]
+            },
+            "output": {
+                "state": {},
+                "result": "<div class=\"output_subarea output_text\"><pre>[0, 1, 2, 3, 4]</pre></div>",
+                "selectedType": "Html",
+                "pluginName": "Python3",
+                "shellId": "4A05BDC88ABC48F8915DF9CC0A369FCD",
+                "elapsedTime": 278,
+                "dataresult": [
+                    0,
+                    1,
+                    2,
+                    3,
+                    4
+                ],
+                "height": 51
+            },
+            "evaluatorReader": true,
+            "lineCount": 9
+        }
+    ],
+    "namespace": {
+        "a": [
+            0,
+            1,
+            2,
+            3,
+            4
+        ]
+    }
+}
