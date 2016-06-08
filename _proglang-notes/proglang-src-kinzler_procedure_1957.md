@@ -1,5 +1,5 @@
 ---
-title:
+title: Kinzler and Moskowitz, "The Procedure Translator — A System of Automatic Programming" (1957)
 type: src
 ---
 

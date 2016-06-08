@@ -1,5 +1,5 @@
 ---
-title:
+title: Bemer, "Print 1 — An Automatic Coding System for the IBM 705" (1957)
 type: src
 ---
 
